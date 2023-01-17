@@ -11,19 +11,25 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class Banner {
-
+public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Size(max = 100, message = "no cumple la longitud")
-    private String nombreUrl;
+    private String nombre;
+    @Size(max = 50, message = "no cumple la longitud")
+    private String email;
+    @Size(max = 255, message = "no cumple la longitud")
+    private String password;
 
-    public Banner() {
+
+    public Usuario() {
     }
 
-    public Banner(String nombreUrl) {
-        this.nombreUrl = nombreUrl;
+    public Usuario(String nombre, String email, String password) {
+        this.nombre = nombre;
+        this.email = email;
+        this.password = password;
+
     }
 }

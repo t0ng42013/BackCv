@@ -1,7 +1,5 @@
 package com.portfolio.gastonAlonso.model;
 
-
-import jakarta.persistence.Basic;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -22,7 +20,6 @@ public class Educacion {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Basic
     @Size(max = 50, message = "no cumple la longitud")
     private String instituto;
     @Temporal(TemporalType.DATE)
@@ -32,12 +29,11 @@ public class Educacion {
     @Size(max = 50, message = "no cumple la longitud")
     private String titulo;
 
-    //constructores
+
     public Educacion() {
     }
 
-    public Educacion(long id, String instituto, Date inicio, Date fin, String titulo) {
-        this.id = id;
+    public Educacion( String instituto, Date inicio, Date fin, String titulo) {
         this.instituto = instituto;
         this.inicio = inicio;
         this.fin = fin;
