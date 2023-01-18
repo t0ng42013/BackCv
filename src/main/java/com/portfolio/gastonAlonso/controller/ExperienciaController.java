@@ -32,7 +32,7 @@ public class ExperienciaController {
     private ExperienciaService experienciaService;
 
 
-    @GetMapping("/list")
+    @GetMapping("/lista")
     public ResponseEntity<List<Experiencia>> verExperiencia() {
         List<Experiencia> experiencias = experienciaService.verExperiencia();
         return new ResponseEntity(experiencias, HttpStatus.OK);

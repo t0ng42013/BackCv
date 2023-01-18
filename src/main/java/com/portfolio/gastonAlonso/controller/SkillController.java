@@ -28,7 +28,7 @@ public class SkillController {
     @Autowired
     private ISkillService skillService;
 
-    @GetMapping("/list")
+    @GetMapping("/lista")
     public ResponseEntity<List<Skill>> verSkill() {
         List<Skill> skills = skillService.verSkill();
         return new ResponseEntity(skills, HttpStatus.OK);

@@ -30,7 +30,7 @@ public class CursoController {
     @Autowired
     private ICursoService cursoService;
 
-    @GetMapping("/list")
+    @GetMapping("/lista")
     public ResponseEntity<List<Curso>> verCurso() {
         List<Curso> cursos = cursoService.verCurso();
         return new ResponseEntity(cursos, HttpStatus.OK);
