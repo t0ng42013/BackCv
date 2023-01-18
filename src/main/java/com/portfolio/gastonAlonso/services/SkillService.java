@@ -1,8 +1,9 @@
-package com.portfolio.gastonAlonso.repository;
+package com.portfolio.gastonAlonso.services;
 import java.util.List;
 
 import com.portfolio.gastonAlonso.interfazServices.ISkillService;
 import com.portfolio.gastonAlonso.model.Skill;
+import com.portfolio.gastonAlonso.repository.SkillRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
