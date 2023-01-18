@@ -1,0 +1,42 @@
+package com.portfolio.gastonAlonso.services;
+
+import java.util.List;
+import com.portfolio.gastonAlonso.interfazServices.IBannerService;
+import com.portfolio.gastonAlonso.model.Banner;
+import com.portfolio.gastonAlonso.repository.BannerRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class BannerService implements IBannerService {
+    @Autowired
+    public BannerRepository bannerRepository;
+    @Override
+    public List<Banner> verBanner() {
+        return bannerRepository.findAll();
+    }
+
+    @Override
+    public void crearBanner(Banner banner) {
+    bannerRepository.save(banner);
+    }
+
+    @Override
+    public void borrarBanner(Long id) {
+    bannerRepository.deleteById(id);
+    }
+
+    @Override
+    public Banner buscarBanner(Long id) {
+        return bannerRepository.findById(id).orElse(null);
+    }
+
+    @Override
+    public Banner editarBanner(Banner banner) {
+        Banner banners= bannerRepository.findById(banner.getId()).orElse(null);
+        banner.setNombreUrl(banner.getNombreUrl());
+
+        return bannerRepository.save(banners);
+    }
+}
+
