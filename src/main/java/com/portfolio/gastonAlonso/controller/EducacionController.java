@@ -32,7 +32,7 @@ public class EducacionController {
     @Autowired
     private IEducacionService educacionService;
 
-    @GetMapping("/list")
+    @GetMapping("/lista")
     public ResponseEntity<List<Educacion>> verEducacion() {
         List<Educacion> educacions = educacionService.verEducacion();
         return new ResponseEntity(educacions, HttpStatus.OK);

@@ -30,7 +30,7 @@ public class ProyectoController {
     @Autowired
     private IProyectoService proyectoService;
 
-    @GetMapping("/list")
+    @GetMapping("/lista")
     public ResponseEntity<List<Proyecto>> verProyecto() {
         List<Proyecto> proyectos = proyectoService.verProyecto();
         return new ResponseEntity(proyectos, HttpStatus.OK);

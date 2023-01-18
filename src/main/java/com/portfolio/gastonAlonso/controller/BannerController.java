@@ -31,7 +31,7 @@ public class BannerController {
     @Autowired
     private IBannerService bannerService;
 
-    @GetMapping("/list")
+    @GetMapping("/lista")
     public ResponseEntity<List<Banner>> verBanner() {
         List<Banner> banners = bannerService.verBanner();
         return new ResponseEntity(banners, HttpStatus.OK);
