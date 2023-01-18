@@ -1,6 +1,4 @@
 package com.portfolio.gastonAlonso.dto;
-
-
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -8,22 +6,16 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
+import java.util.Date;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class PersonaDto implements Serializable {
-    @NotBlank
-    private String nombre;
-    @NotBlank
-    private String apellido;
-    private String domicilio;
-
+public class CursoDto implements Serializable {
+@NotBlank
+    private String instituto;
+    private Date inicio;
+    private Date fin;
     private String titulo;
-
-    private String sobreMi;
-
-    private  String url;
-
 }
