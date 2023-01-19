@@ -1,4 +1,4 @@
-FROM amazoncorretto:19
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+FROM amazoncorretto:19-alpine-jdk
+MAINTAINER gastonAlonso
+COPY target/gastonAlonso-0.0.1-SNAPSHOT.jar gastonAlonso.jar
+ENTRYPOINT ["java","-jar","/gastonAlonso.jar"]
