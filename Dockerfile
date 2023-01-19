@@ -1,4 +1,4 @@
-FROM openjdk:19-jdk-alpine
+FROM amazoncorretto:19-alpine-jdk
 RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring
 MAINTAINER gastonAlonso
