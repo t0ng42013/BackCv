@@ -1,4 +1,7 @@
-FROM amazoncorretto:19
+FROM openjdk:19-jdk-alpine
+RUN addgroup -S spring && adduser -S spring -G spring
+USER spring:spring
 MAINTAINER gastonAlonso
-COPY target/gastonAlonso.jar  gastonAlonso.jar
-ENTRYPOINT ["java", "-jar", "gastonAlonso.jar"]
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
