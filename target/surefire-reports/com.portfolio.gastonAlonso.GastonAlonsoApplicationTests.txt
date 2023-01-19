@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.portfolio.gastonAlonso.GastonAlonsoApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.518 s - in com.portfolio.gastonAlonso.GastonAlonsoApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.392 s - in com.portfolio.gastonAlonso.GastonAlonsoApplicationTests
