@@ -1,4 +1,4 @@
-package com.portfolio.gastonAlonso.controller;
+/*package com.portfolio.gastonAlonso.controller;
 import java.util.List;
 
 import com.portfolio.gastonAlonso.dto.BannerDto;
@@ -68,3 +68,4 @@ public class BannerController {
     }
 
 }
+*/
