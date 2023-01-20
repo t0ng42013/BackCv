@@ -19,6 +19,7 @@ com\portfolio\gastonAlonso\model\Experiencia.class
 com\portfolio\gastonAlonso\controller\EducacionController.class
 com\portfolio\gastonAlonso\GastonAlonsoApplication.class
 com\portfolio\gastonAlonso\services\BannerService.class
+com\portfolio\gastonAlonso\controller\BannerController.class
 com\portfolio\gastonAlonso\repository\PersonaRepository.class
 com\portfolio\gastonAlonso\model\Usuario.class
 com\portfolio\gastonAlonso\repository\CursoRepository.class
@@ -37,6 +38,7 @@ com\portfolio\gastonAlonso\interfazServices\ISkillService.class
 com\portfolio\gastonAlonso\services\ExperienciaService.class
 com\portfolio\gastonAlonso\security\AuthCredentials.class
 com\portfolio\gastonAlonso\model\Proyecto.class
+com\portfolio\gastonAlonso\controller\CursoController.class
 com\portfolio\gastonAlonso\controller\SkillController.class
 com\portfolio\gastonAlonso\dto\PersonaDto.class
 com\portfolio\gastonAlonso\interfazServices\IPersonaService.class

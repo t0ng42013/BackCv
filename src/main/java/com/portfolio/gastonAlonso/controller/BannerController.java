@@ -1,4 +1,4 @@
-/*package com.portfolio.gastonAlonso.controller;
+package com.portfolio.gastonAlonso.controller;
 import java.util.List;
 
 import com.portfolio.gastonAlonso.dto.BannerDto;
@@ -6,7 +6,6 @@ import com.portfolio.gastonAlonso.dto.Mensaje;
 
 import com.portfolio.gastonAlonso.interfazServices.IBannerService;
 import com.portfolio.gastonAlonso.model.Banner;
-import com.portfolio.gastonAlonso.model.Persona;
 import io.micrometer.common.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,7 +18,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -68,4 +66,3 @@ public class BannerController {
     }
 
 }
-*/

@@ -1,4 +1,4 @@
-/*package com.portfolio.gastonAlonso.controller;
+package com.portfolio.gastonAlonso.controller;
 
 import java.sql.Date;
 import java.util.List;
@@ -71,4 +71,3 @@ public class CursoController {
 
 
 }
-*/
