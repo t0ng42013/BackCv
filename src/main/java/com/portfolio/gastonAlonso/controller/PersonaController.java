@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/persona")
-@CrossOrigin(origins = {"https://lga-portfolio.web.app/api","http://localhost:4200"})
+@CrossOrigin(origins = {"https://lga-portfolio.web.app","http://localhost:4200"})
 public class PersonaController {
 
     @Autowired
