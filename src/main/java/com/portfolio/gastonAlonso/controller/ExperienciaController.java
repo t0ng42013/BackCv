@@ -5,7 +5,7 @@ import java.util.List;
 import com.portfolio.gastonAlonso.dto.ExperienciaDto;
 import com.portfolio.gastonAlonso.dto.Mensaje;
 import com.portfolio.gastonAlonso.model.Curso;
-import com.portfolio.gastonAlonso.model.Educacion;
+
 import com.portfolio.gastonAlonso.model.Experiencia;
 import com.portfolio.gastonAlonso.services.ExperienciaService;
 import io.micrometer.common.util.StringUtils;
@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/experiencia")
-@CrossOrigin(origins = {"https://web-lga.web.app","http://localhost:4200"})
+@CrossOrigin(origins = {"https://lga-portfolio.web.app/api","http://localhost:4200"})
 
 public class ExperienciaController {
     @Autowired

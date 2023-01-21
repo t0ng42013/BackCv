@@ -4,7 +4,6 @@ import com.portfolio.gastonAlonso.dto.Mensaje;
 import com.portfolio.gastonAlonso.dto.ProyectoDto;
 import com.portfolio.gastonAlonso.interfazServices.IProyectoService;
 import com.portfolio.gastonAlonso.model.Curso;
-import com.portfolio.gastonAlonso.model.Educacion;
 import com.portfolio.gastonAlonso.model.Proyecto;
 import io.micrometer.common.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/proyecto")
-@CrossOrigin(origins = {"https://web-lga.web.app","http://localhost:4200"})
+@CrossOrigin(origins = {"https://lga-portfolio.web.app/api","http://localhost:4200"})
 
 public class ProyectoController {
 
